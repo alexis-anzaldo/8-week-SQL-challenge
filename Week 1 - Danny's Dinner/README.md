@@ -1,10 +1,10 @@
 ## Case Study #1 - Danny's Diner
 
-<img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" width=50% height=50%>
+<img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" width=30% height=30%>
 
 ## Entity Relationship Diagram
 
-![](https://github.com/alexis-anzaldo/8-week-SQL-challenge/blob/main/images/Week_1_entity_relationship_diagram.png)
+<img src="https://github.com/alexis-anzaldo/8-week-SQL-challenge/blob/main/images/Week_1_entity_relationship_diagram.png?raw=true" width=60% height=60%>
 
 
 ## 1. What is the total amount each customer spent at the restaurant?
@@ -232,16 +232,16 @@ FROM (
 GROUP BY wk.customer_id;
 ~~~
 
-## BONUS QUESTIONS
+## BONUS QUESTION
 
 ### Join All The Things
 ### The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 
-### Recreate the following table output using the available data:
+### Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
 
 ~~~sql
 SELECT
-	sales.customer_id,
+    sales.customer_id,
     sales.order_date,
     menu.product_name,
     menu.price,
@@ -252,6 +252,3 @@ JOIN dannys_diner.members ON sales.customer_id = members.customer_id
 ORDER BY customer_id, order_date, product_name;
 ~~~
 
-
-### Rank All The Things
-### Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
