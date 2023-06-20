@@ -4,8 +4,8 @@
 
 ## Entity Relationship Diagram
 
-<img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" width=50% height=50%>
-![]()
+![](https://github.com/alexis-anzaldo/8-week-SQL-challenge/blob/main/images/Week_1_entity_relationship_diagram.png)
+
 
 ## 1. What is the total amount each customer spent at the restaurant?
 
